@@ -107,7 +107,7 @@ export default function UserProfile() {
           {reviews.length === 0 ? (
             <div className="text-center py-8">
               <p className="text-lg opacity-70">
-                You haven$apos;t written any reviews yet
+                No reviews yet
               </p>
               <p className="text-sm opacity-50 mt-2">
                 Start sharing your dining experiences!

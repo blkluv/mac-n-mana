@@ -43,10 +43,10 @@ export default function MapSearch() {
   } | null>(null);
 
   const messages = [
-    "Ate somewhere awesome today?",
-    "Found a hidden food gem?",
-    "What are you craving today?",
-    "What's cooking?",
+    "Did it slap today?",
+    "Don't gatekeep the spot.",
+    "Current hyperfixation meal?",
+    "Let 'em cook.",
   ];
 
   const { isConnected } = useAccount();
@@ -192,7 +192,7 @@ export default function MapSearch() {
       if (!mapRef.current) return;
 
       const map = new google.maps.Map(mapRef.current, {
-        center: { lat: 3.139, lng: 101.6869 },
+        center: { lat: 33.7126, lng: -84.5367 },
         zoom: 14,
         mapTypeControl: false,
         streetViewControl: false,

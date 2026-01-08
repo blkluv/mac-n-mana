@@ -12,7 +12,7 @@ export default function Welcome() {
         <div className="flex flex-col space-y-4 items-center">
           <span className="text-5xl">🍔</span>
           <Logo className="w-72" />
-          <p className="font-bold mb-8">Legit food reviews without the FUD!</p>
+          <p className="font-bold mb-8">Legit food reviews with TikTok UGC #foodreelview</p>
           <ConnectButton />
         </div>
       </div>

@@ -12,8 +12,8 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  title: "Mac n' Mana",
-  description: "Legit food reviews without the FUD!",
+  title: "FOOD REELVIEW",
+  description: "Legit food reviews with TikTok UGC #foodreelview",
 };
 
 export default function RootLayout({

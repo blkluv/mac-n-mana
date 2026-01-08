@@ -3,8 +3,8 @@ import { sepolia } from "wagmi/chains";
 import { hardhatLocal } from "./localchain";
 
 export const config = getDefaultConfig({
-  appName: "Mac n' Mana",
-  projectId: "YOUR_PROJECT_ID",
+  appName: "Food ReelView",
+  projectId: "606169e666474569070e28a0135f528c",
   chains: [sepolia, hardhatLocal],
   ssr: true,
 });

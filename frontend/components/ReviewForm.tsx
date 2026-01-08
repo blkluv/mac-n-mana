@@ -206,16 +206,29 @@ export default function ReviewForm() {
             className="hidden"
             multiple
           />
-          <button
-            type="button"
-            onClick={handleCameraClick}
-            className="btn w-max"
-            disabled={uploadStage !== "idle" || imageFiles.length >= MAX_PHOTOS}
-          >
-            {imageFiles.length > 0
-              ? `Add Photo (${imageFiles.length}/${MAX_PHOTOS})`
-              : "Add Photos"}
-          </button>
+          
+          {/* Photo and TikTok buttons container */}
+          <div className="flex flex-row space-x-4">
+            <button
+              type="button"
+              onClick={handleCameraClick}
+              className="btn w-max"
+              disabled={uploadStage !== "idle" || imageFiles.length >= MAX_PHOTOS}
+            >
+              {imageFiles.length > 0
+                ? `Add Photo (${imageFiles.length}/${MAX_PHOTOS})`
+                : "Add Photos"}
+            </button>
+            
+            <button
+              type="button"
+              onClick={() => window.open("https://tiktok.com/@foodreelview", "_blank")}
+              className="btn btn-outline w-max"
+              disabled={uploadStage !== "idle"}
+            >
+              Add TikTok ReelView
+            </button>
+          </div>
 
           {imagePreviews.length > 0 && (
             <div className="mt-2 grid grid-cols-3 gap-2">
